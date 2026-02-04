@@ -1,0 +1,16 @@
+// Proceso de Data Augmentation
+digraph {
+	A [label="Posiciones iniciales de UEs"]
+	B [label="Muestreo Estratificado"]
+	C [label="Perturbación de Posiciones"]
+	D [label="Variación en Condiciones de Canal"]
+	E [label="Comparación con Asignaciones Previas"]
+	F [label="Cálculo de Distancias y NMSE"]
+	G [label="Dataset de Asignación Final"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+}

@@ -1,4 +1,4 @@
-\# Sample Datasets
+# Sample Datasets
 
 
 
@@ -8,11 +8,11 @@ demonstration purposes.
 
 
 
-\## Folder Structure
+## Folder Structure
 
 
 
-\- `optimal/`  
+- `optimal`  
 
 &nbsp; Datasets generated using optimal pilot assignment, computed via exhaustive
 
@@ -20,7 +20,7 @@ demonstration purposes.
 
 
 
-\- `random/`  
+- `random/`  
 
 &nbsp; Datasets generated using random pilot assignment, used as a baseline reference.
 
@@ -40,7 +40,7 @@ where:
 
 
 
-\## Notes on Scalability
+## Notes on Scalability
 
 
 
@@ -51,16 +51,6 @@ pilot sequences. Larger datasets were generated offline and are not included
 due to computational and size constraints.
 
 
-
-\## Notes on Scalability
-
-
-
-Dataset generation time increases combinatorially with the number of users and
-
-pilot sequences. Larger datasets were generated offline and are not included
-
-due to computational and size constraints.
 
 
 

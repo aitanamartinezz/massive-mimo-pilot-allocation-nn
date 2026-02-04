@@ -3,6 +3,11 @@ data/raw/
 data/processed/
 **/*.csv
 
+# Allow sample datasets
+!data/samples/
+!data/samples/**/*.csv
+
+
 # Trained models
 *.keras
 *.h5

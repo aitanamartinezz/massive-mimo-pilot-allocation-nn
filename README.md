@@ -151,6 +151,72 @@ It is particularly relevant for:
 
 - Large-scale multi-user and high-density systems
 
+## Results
+
+The proposed neural network–based pilot assignment approach was evaluated under
+multiple system configurations and compared against three reference strategies:
+optimal pilot assignment, random assignment, and a traditional k-beams–based method.
+
+Performance was assessed using the **total system NMSE**, which reflects the overall
+quality of channel estimation across all users.
+
+### Baseline Configuration
+
+For a representative configuration with:
+- 10 user equipments (UEs)
+- 3 pilot sequences
+- Square cell of 50 meters per side
+
+The following NMSE values were obtained:
+
+| Pilot Assignment Strategy | NMSE |
+|---------------------------|------|
+| Random assignment         | 3.69 |
+| k-beams                   | 2.25 |
+| Neural network (proposed) | 1.99 |
+| Optimal assignment        | 1.78 |
+
+The neural network significantly outperforms the random baseline and the traditional
+k-beams method, achieving performance close to the optimal exhaustive solution.
+
+### Impact of System Parameters
+
+Experimental results show that:
+
+- **Increasing the number of UEs** leads to higher NMSE for all methods, highlighting
+  the importance of intelligent pilot assignment in dense scenarios.
+- **Increasing the number of pilot sequences** consistently reduces NMSE, as additional
+  pilots provide more degrees of freedom to mitigate interference.
+- **Varying the cell size** affects channel estimation quality due to changes in UE
+  spatial distribution and interference patterns.
+
+Across all evaluated scenarios, the neural network approach remains consistently close
+to the optimal solution and clearly superior to random assignment.
+
+These results indicate that the proposed model is capable of learning meaningful pilot
+assignment strategies that generalize across different network configurations.
+
+## Conclusions
+
+This project demonstrates that neural networks can effectively approximate optimal
+pilot assignment strategies in massive MIMO systems, achieving near-optimal NMSE
+performance with significantly lower computational complexity.
+
+Key conclusions include:
+
+- The proposed neural network consistently outperforms random and traditional
+  k-beams–based pilot assignment methods.
+- The model is able to generalize across different numbers of users, pilot sequences,
+  and cell sizes.
+- Although exhaustive optimal assignment provides the lowest NMSE, its combinatorial
+  complexity makes it impractical for large-scale systems.
+- The neural network offers a scalable and computationally efficient alternative that
+  achieves performance close to the optimal solution.
+
+From a system-level perspective, improved pilot assignment leads to more accurate
+channel estimation, reduced interference, and more efficient use of radio resources,
+which are critical factors in next-generation wireless networks.
+
 👩‍💻 Author:
 
 Aitana Martínez
